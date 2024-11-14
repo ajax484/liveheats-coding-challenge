@@ -28,7 +28,12 @@ export default function RootLayout({
       <body
         className={`${geistSans.variable} ${geistMono.variable} antialiased`}
       >
-        {children}
+        <header className="bg-white shadow-sm border-b py-4 px-6 fixed top-0 z-10 inset-x-0">
+          <h1 className="text-3xl font-bold tracking-tight text-red-500">
+            Live Heats
+          </h1>
+        </header>
+        <main className="mt-36 pb-12">{children}</main>
       </body>
     </html>
   );
