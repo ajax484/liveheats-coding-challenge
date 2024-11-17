@@ -9,9 +9,9 @@ A responsive web application built with Next.js, React Hook Form, and Zod for ma
 ### Validation:
 - Ensures sequential ranking with tie support.
 - Displays errors for invalid sequences.
-- 
+
 ### Responsive UI:
--User-friendly design for desktop and mobile devices.
+- User-friendly design for desktop and mobile devices.
 - Dropdown-based ranking selection.
 
 ### State Management:
@@ -26,17 +26,16 @@ A responsive web application built with Next.js, React Hook Form, and Zod for ma
 
 ## Screenshots
 **Home Page**
-![screenbud-8ad47300-5838-41ec-a9d8-fe75c9a35bdb](https://hackmd.io/_uploads/HkNzzSvG1e.png)
+![screenbud-8ad47300-5838-41ec-a9d8-fe75c9a35bdb](https://github.com/user-attachments/assets/a675cc5d-2c77-49f7-9b07-112aeaa3ca7d)
 
 **Create Race Page**
-![screenbud-12c636c0-3f62-4bfb-8918-c26440c87ce7](https://hackmd.io/_uploads/SyNLzrwGye.png)
+![screenbud-12c636c0-3f62-4bfb-8918-c26440c87ce7](https://github.com/user-attachments/assets/89037ef5-dc49-4d31-ada7-569616318657)
 
-**Update Race Results Page**
-![screenbud-33069bdc-eb73-46a9-b3c9-b38588e6451b](https://hackmd.io/_uploads/BybOzBvfye.png)
+**Update Final Results Page**
+![screenbud-33069bdc-eb73-46a9-b3c9-b38588e6451b](https://github.com/user-attachments/assets/89bef82f-f623-49dd-b049-f5a079b6e7b4)
 
 **Race Details Page**
-![screenbud-5947543b-1d0c-46f6-8ae5-98f291335796](https://hackmd.io/_uploads/H1hP7BPfJl.png)
-
+![screenbud-5947543b-1d0c-46f6-8ae5-98f291335796](https://github.com/user-attachments/assets/682f935a-7259-49e5-8076-d583a236d860)
 
 
 ## Installation & Setup
@@ -64,7 +63,6 @@ This project is licensed under the MIT License. See the LICENSE file for more de
 
 ## Contact ☎️
 Feel free to reach out for feedback or questions:
-
-Author: Bilal Yusuf
-Email: ubahyusuf484@gmail.com
-GitHub: ajax484
+- Author: Bilal Yusuf
+- Email: ubahyusuf484@gmail.com
+- GitHub: ajax484
