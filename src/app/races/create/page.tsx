@@ -31,7 +31,6 @@ const CreateRacePage = () => {
     defaultValues: {
       title: "",
       participants: [],
-      totalParticipants: 2,
     },
   });
 
@@ -71,6 +70,7 @@ const CreateRacePage = () => {
           name: newParticipant,
           lane: getNextLane(),
           id: generateId(),
+          place: getNextLane(),
         },
       ]);
       setNewParticipant("");
@@ -82,13 +82,19 @@ const CreateRacePage = () => {
       "participants",
       participants.map((p) => {
         if (p.id === participantId) {
-          return { ...p, lane: parseInt(newLane, 10) };
+          return {
+            ...p,
+            lane: parseInt(newLane, 10),
+            place: parseInt(newLane, 10),
+          };
         }
         if (p.lane === parseInt(newLane, 10)) {
           const selectedParticipant = participants.find(
             (part) => part.id === participantId
           );
-          return { ...p, lane: selectedParticipant.lane };
+          return selectedParticipant
+            ? { ...p, lane: selectedParticipant.lane }
+            : p;
         }
         return p;
       })
@@ -113,6 +119,7 @@ const CreateRacePage = () => {
         </h1>
         <Form {...form}>
           <form
+            title="create race form"
             onSubmit={form.handleSubmit(handleAddRace)}
             className="space-y-6 mt-4"
           >
@@ -168,7 +175,7 @@ const CreateRacePage = () => {
                 className="btn"
                 type="button"
                 onClick={handleFirstStepSubmit}
-                disabled={totalParticipants < 2}
+                disabled={!totalParticipants || totalParticipants < 2}
               >
                 Next
               </Button>
