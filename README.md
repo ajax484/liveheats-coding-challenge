@@ -1,36 +1,70 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# Liveheats Coding Challenge
+A responsive web application built with Next.js, React Hook Form, and Zod for managing and updating race results. This app allows teachers to adjust the positions of race participants, validate sequences, and update final results with a clean and intuitive UI.
 
-## Getting Started
+## Features
+### Participant Management:
+- Dynamically adjust participant rankings.
+- Automatically shift other participants' positions based on adjustments.
 
-First, run the development server:
+### Validation:
+- Ensures sequential ranking with tie support.
+- Displays errors for invalid sequences.
+- 
+### Responsive UI:
+-User-friendly design for desktop and mobile devices.
+- Dropdown-based ranking selection.
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
+### State Management:
+- Efficiently manages races using a global store.
+
+## Tech Stack
+- Frontend: Next.js
+- Form Handling: React Hook Form
+- Validation: Zod
+- Styling: Tailwind CSS
+- State Management: Custom useRaceStore Hook
+
+## Screenshots
+**Home Page**
+![screenbud-8ad47300-5838-41ec-a9d8-fe75c9a35bdb](https://hackmd.io/_uploads/HkNzzSvG1e.png)
+
+**Create Race Page**
+![screenbud-12c636c0-3f62-4bfb-8918-c26440c87ce7](https://hackmd.io/_uploads/SyNLzrwGye.png)
+
+**Update Race Results Page**
+![screenbud-33069bdc-eb73-46a9-b3c9-b38588e6451b](https://hackmd.io/_uploads/BybOzBvfye.png)
+
+**Race Details Page**
+![screenbud-5947543b-1d0c-46f6-8ae5-98f291335796](https://hackmd.io/_uploads/H1hP7BPfJl.png)
+
+
+
+## Installation & Setup
+1. Clone the repository:
+```bash!
+git clone https://github.com/ajax484/liveheats-coding-challenge.git
+cd liveheats-coding-challenge
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+2. Install dependencies:
+```bash!
+npm install
+```
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+3. Start the development server:
+```bash!
+npm run dev
+```
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+4. Open in your browser: 
+Visit http://localhost:3000 to view the app.
 
-## Learn More
+## License 📜
+This project is licensed under the MIT License. See the LICENSE file for more details.
 
-To learn more about Next.js, take a look at the following resources:
+## Contact ☎️
+Feel free to reach out for feedback or questions:
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+Author: Bilal Yusuf
+Email: ubahyusuf484@gmail.com
+GitHub: ajax484
