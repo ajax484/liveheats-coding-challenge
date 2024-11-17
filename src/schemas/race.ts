@@ -6,7 +6,7 @@ export const ParticipantSchema = z.object({
   }),
   lane: z.number({ required_error: "lane is required" }),
   id: z.string({ required_error: "id is required" }),
-  place: z.number().int().min(1, "Position must be at least 1").optional(),
+  place: z.number().int().min(1, "Position must be at least 1"),
 });
 
 export const CreateRaceSchema = z
