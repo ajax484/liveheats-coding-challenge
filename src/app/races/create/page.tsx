@@ -187,7 +187,7 @@ const CreateRacePage = () => {
                 <FormField
                   control={form.control}
                   name="participants"
-                  render={({ field }) => (
+                  render={() => (
                     <FormItem>
                       <FormLabel>Participant</FormLabel>
                       <FormControl>

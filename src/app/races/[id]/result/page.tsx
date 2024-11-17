@@ -15,6 +15,7 @@ import {
 import { addOrdinalSuffix } from "@/app/utils/helper";
 import { Form } from "@/components/ui/form";
 import { Button } from "@/components/ui/button";
+import { Link } from "lucide-react";
 
 const RaceResultsPage = () => {
   const { races, updateRace } = useRaceStore();
@@ -22,8 +23,6 @@ const RaceResultsPage = () => {
   const router = useRouter();
 
   const race = races.find((race) => race.id === id);
-
-  if (!race) return <p>Race not found</p>;
 
   const form = useForm<Race>({
     resolver: zodResolver(CreateRaceSchema),
@@ -107,6 +106,23 @@ const RaceResultsPage = () => {
       alert("Invalid sequence of places detected. Please fix and try again.");
     }
   };
+
+  if (!race)
+    return (
+      <div className="flex">
+        <div className="w-[90%] md:w-3/4 mx-auto space-y-6">
+          <h1 className="text-2xl md:text-4xl font-bold capitalize border-b pb-4">
+            Update Final Results
+          </h1>
+          <p>Race not found</p>
+          <Link href="/">
+            <Button className="btn" type="submit">
+              Back to Races
+            </Button>
+          </Link>
+        </div>
+      </div>
+    );
 
   return (
     <div className="flex">
