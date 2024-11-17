@@ -34,7 +34,7 @@ const CreateRacePage = () => {
     },
   });
 
-  const { addRace } = useRaceStore();
+  const { addRace, races } = useRaceStore();
   const [newParticipant, setNewParticipant] = useState("");
   const [isFirstStepComplete, setIsFirstStepComplete] = useState(false);
   const router = useRouter();
@@ -44,7 +44,12 @@ const CreateRacePage = () => {
   const handleAddRace = (race: Race) => {
     const id = generateId();
     addRace({ ...race, id });
-    router.push(`/races/${id}/result`);
+
+    if (races.find((r) => r.title === race.title)) {
+      alert("Race with the same title already exists");
+    } else {
+      router.push(`/races/${id}/result`);
+    }
   };
 
   const getNextLane = () => {
