@@ -19,10 +19,10 @@ const RaceDetailsPage = () => {
   );
 
   return (
-    <div className="space-y-8">
+    <div className="space-y-4">
       {/* Race Details */}
       <section className="px-8 py-4">
-        <h2 className="text-3xl font-semibold">{race.title}</h2>
+        <h2 className="font-bold text-3xl capitalize">{race.title}</h2>
       </section>
 
       {/* Participants Results Table */}
